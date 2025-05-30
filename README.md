@@ -14,7 +14,7 @@ node index.js
 ```
 
 
-### Post a JOb
+### Post a Job
 ```
 curl -X POST http://localhost:3000/jobs \
   -H "Content-Type: application/json" \
@@ -22,4 +22,16 @@ curl -X POST http://localhost:3000/jobs \
     "jobName": "my-task-42",
     "arguments": ["arg1", "arg2"]
   }'
+```
+
+
+### Get list of a jobs
+```
+ curl http://localhost:3000/jobs
+```
+
+
+### Get stats
+```
+ curl http://localhost:3000/stats
 ```
